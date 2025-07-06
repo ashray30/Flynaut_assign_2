@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.menu-section{
+    padding-left: 600px;
+}
+
+.carousel-caption h1,
+.carousel-caption p,
+.carousel-caption button
+
+    {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s ease-in-out 1 forwards;
+}
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+.carousel-caption h1{
+    animation-delay: 1.2s!important;
+}
+.carousel-caption p{
+    animation-delay: 1.4s!important;
+}
+.carousel-caption button{
+    animation-delay: 1.6s!important;
+}
+
+.owl-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-nav button {
+background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    line-height: 38px;
+    cursor: pointer;
+
+
+
+
+}
+.owl-nav button span  {
+  color: black;
+    font-size: 20px;
+}

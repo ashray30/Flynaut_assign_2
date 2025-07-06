@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- https://fabrex.websitelayout.net/home-corporate-1.html -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fabrex</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Swiper from CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- owl carousel cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+ <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body>
+    <header class="  top-bar  z-50 bg-black text-white" >
+        <div class="container flex flex-row  justify-start lg:justify-between p-1 lg:text-lg">
+            
+            <div class="top-first-section ps-32">
+                <ul class="list-unstyled flex gap-2">
+                    <li><i class="fas fa-mobile-alt p-2 text-green-600"></i>+91 888865545</li>
+                    <li><i class="fas fa-envelope p-2 text-green-600"></i>abcd@gmail.com</li>
+                </ul>
+            </div>
+            
+            <div class="top-second-section hidden md:block">
+                <ul class="list-unstyled flex pe-20 gap-2">
+                    <li><a href="#" class="text-white text-sm  p-2"><i class="bi bi-twitter "></i></a></li>
+                    <li><a href="#" class="text-white text-sm p-2"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" class="text-white text-sm p-2"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#" class="text-white text-sm p-2"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+            
+        
+        </div>        
+    </header>
+
+
+
+<!-- Navbar -->
+<header class="w-full bg-white shadow-md sticky top-0 z-50 ">
+  <div class="max-w-7xl mx-auto px-4 py-2 lg:py-1 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="text-2xl font-bold">      
+      <img class="h-[2.5rem]" src="https://fabrex.websitelayout.net/img/logos/logo.png" alt="" srcset="">    
+    </div>  
+
+     <!-- Menu + Icons -->
+    <div class="flex  items-center gap-6">
+    <!-- Dropdown Menu -->
+    <div class="dropdown shadow-md lg:shadow-none hidden lg:static absolute top-16 right-24 lg:flex flex-col lg:flex-row bg-white w-[75%] lg:w-auto px-6 py-4 lg:py-0 lg:px-0 border-t lg:border-0 border-gray-200 lg:items-center lg:gap-12">
+        <ul class="flex flex-col lg:flex-row gap-4 lg:gap-8  font-bold w-full lg:w-auto">
+        <li class="flex justify-between items-center border-b lg:border-0 py-0 lg:px-3"><a href="#">HOME</a> <span class="lg:hidden">+</span></li>
+        <li class="flex justify-between items-center border-b lg:border-0 py-0 lg:px-3"><a href="#">PAGES</a> <span class="lg:hidden">+</span></li>
+        <li class="flex justify-between items-center border-b lg:border-0 py-0 lg:px-3"><a href="#">FEATURES</a> <span class="lg:hidden">+</span></li>
+        <li class="flex justify-between items-center border-b lg:border-0 py-0 lg:px-3"><a href="#">PORTFOLIO</a> <span class="lg:hidden">+</span></li>
+        <li class="flex justify-between items-center border-b lg:border-0 py-0 lg:px-3"><a href="#">BLOG</a> <span class="lg:hidden">+</span></li>
+        <li class="flex justify-between items-center border-b lg:border-0 py-0 lg:px-3"><a href="#">SHOP</a> <span class="lg:hidden">+</span></li>
+        <li class="flex justify-between items-center  lg:border-0 py-0 lg:px-3"><a href="#">ELEMENTS</a> <span class="lg:hidden">+</span></li>
+        </ul>
+    </div>
+
+      <!-- Icons -->
+      <div class="flex items-center gap-4">
+        <i class="fa fa-shopping-cart text-xl relative">
+          <span class="absolute -top-2 -right-2 bg-green-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
+        </i>
+        <i class="fa fa-search text-xl"></i>
+
+        <!-- Hamburger Toggle (Mobile only) -->
+        <button class="toggle-button lg:hidden p-2  bg-black ">
+          <i class="fa-solid fa-bars text-3xl text-white"></i>
+        </button>
+      </div>
+    </div>
+
+ <!-- Toggle Button (Hamburger/X) -->
+
+<!-- <div>
+<button class="toggle-button lg:hidden p-2 border border-gray-300 rounded">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </div>
+</div> -->
+
+
+</header>
+
+
+
+<!-- slider carousel section -->
+
+<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000" >
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <div class="">
+        <img class="h-[25rem] lg:h-full" src="./img/slider/slide18.jpg"  alt="First slide">
+    </div>
+      
+     <div class="carousel-caption absolute top-20 left-5 sm:left-8 md:top-24 md:left-10 lg:top-28 lg:left-10 xl:top-40 xl:left-14 w-[90%] lg:w-[70%] max-w-[600px] text-left px-2">
+        <h1 class="text-black font-semibold text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-5xl mb-4 lg:mb-6">
+            We Think Differently
+        </h1>
+        <p class="text-gray-400 text-sm sm:text-base md:text-lg lg:text-lg xl:text-2xl mb-4 xl:mb-6 w-64 lg:w-[26rem] xl:w-full">
+        Trusted and professional business consultant to fulfill your dreams with latest technology putting on project.
+        </p>
+        <button class="bg-green-600 hover:bg-green-400 text-sm sm:text-base lg:text-lg xl:text-xl px-4 py-2 lg:px-6 lg:py-3 rounded-lg transition duration-300">
+        View Project
+    </button>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="">
+        <img class="h-[25rem] lg:h-full" src="./img/slider/slide19.jpg"  alt="First slide">
+    </div>
+    <div class="carousel-caption absolute top-20 left-1/2 transform -translate-x-1/2 
+    lg:top-28 lg:left-10 lg:right-10 
+    xl:top-40 xl:left-14 xl:right-14 
+    lg:translate-x-60 w-[90%] xl:translate-x-[45rem] max-w-[600px] text-right lg:text-right">
+
+    <h1 class="text-black text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-5xl mb-4 lg:mb-6 font-semibold">
+        We Think Differently
+    </h1>
+
+    <p class="text-gray-400 text-base sm:text-lg md:text-xl lg:xl xl:text-2xl mb-4">
+        Trusted and professional business consultant to fulfill your dreams with latest technology putting on project.
+    </p>
+
+    <button class="bg-green-600 hover:bg-green-400 text-base sm:text-lg lg:text:lg xl:text-xl px-4 py-2 lg:px-6 lg:py-3 rounded-lg transition duration-300">
+        View Project
+    </button>
+</div>
+      <!-- <div class="carousel-caption absolute top-20 left-1/2 transform -translate-x-1/2 lg:top-28 lg:left-10 lg:right-10 xl:top-40 xl:left-14 xl:right-14 lg:translate-x-0 w-[90%] max-w-[600px] text-right lg:text-right">
+        <h1 class="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 lg:mb-6 font-semibold">
+            We Think Differently
+        </h1>
+        <p class="text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl mb-4 ">
+            Trusted and professional business consultant to fulfill your dreams with latest technology putting on project.
+        </p>
+        <button class="bg-green-600 hover:bg-green-400 text-base sm:text-lg lg:text-xl px-4 py-2 lg:px-6 lg:py-3 rounded-lg transition duration-300">
+            View Project
+        </button>
+    </div> -->
+    </div>
+    <div class="carousel-item">
+      <div class="">
+        <img class="h-[25rem] lg:h-full" src="./img/slider/slide20.jpg"  alt="First slide">
+    </div>
+
+    <div class="carousel-caption absolute top-20 left-5 sm:left-8 md:top-24 md:left-10 lg:top-28 lg:left-10 xl:top-40 xl:left-14 w-[90%] lg:w-[70%] max-w-[600px] text-left px-2">
+        <h1 class="text-black font-semibold text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-5xl mb-4 lg:mb-6">
+            We Think Differently
+        </h1>
+        <p class="text-gray-400 text-sm sm:text-base md:text-lg lg:text-lg xl:text-2xl mb-4 xl:mb-6 w-64 lg:w-[26rem] xl:w-full">
+        Trusted and professional business consultant to fulfill your dreams with latest technology putting on project.
+        </p>
+        <button class="bg-green-600 hover:bg-green-400 text-sm sm:text-base lg:text-lg xl:text-xl px-4 py-2 lg:px-6 lg:py-3 rounded-lg transition duration-300">
+        View Project
+    </button>
+    </div>
+    <!-- <div class="carousel-caption absolute top-20 left-5 sm:left-8 md:top-24 md:left-10 lg:top-40 lg:left-14 w-[90%] max-w-[600px] text-left px-2">
+        <h1 class="text-black font-semibold text-xl sm:text-2xl md:text-3xl lg:text-5xl mb-4 lg:mb-6">
+            We Think Differently
+        </h1>
+        <p class="text-gray-400 text-sm sm:text-base md:text-lg lg:text-2xl mb-4 lg:mb-6 w-64 lg:w-full">
+        Trusted and professional business consultant to fulfill your dreams with latest technology putting on project.
+        </p>
+        <button class="bg-green-600 hover:bg-green-400 text-sm sm:text-base lg:text-xl px-4 py-2 lg:px-6 lg:py-3 rounded-lg transition duration-300">
+        View Project
+    </button>
+    </div>
+  </div> -->
+
+
+
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>    
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+
+
+
+<!-- card carousel section
+         ================================================== -->
+<section  class="mx-auto my-10 max-w-[90%] font-poppins ">
+  <div class="text-center p-5">
+    <h2 class="text-center font-semibold text-4xl">What we Do</h2>
+    <div class="w-24 h-[3px] bg-green-500 mx-auto mt-2"></div>
+  </div>
+ 
+<div class="owl-carousel card-swiper owl-theme ">  
+      
+    <div class="item bg-white border-2 border-gray-300 m-2 sm:m-3 p-4 rounded-lg shadow-sm">
+    <div class="pt-3">
+      <i class="bi bi-globe text-green-500 text-4xl sm:text-5xl lg:text-6xl"></i>
+      <h3 class="text-xl md:text-lg lg:xl font-bold mt-2">
+        Investment<br />planning & strategy 1
+      </h3>
+    </div>
+    <p class="pt-4 text-sm sm:text-base md:text-lg text-gray-700">
+      International business consulting perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+    </p>
+    <div class="border-t-2 border-gray-300 pt-3 mt-4">
+      <a href="#!" class="text-green-600 hover:underline text-base md:text-lg font-semibold">
+        Read more...
+      </a>
+    </div>
+    <div class="show-details hidden">
+      <img src="./img/feature-04.jpg" class="w-full h-auto object-cover mt-2 lg:mt-4 rounded" alt="...">
+      <div class="feature-box-detail p-4 bg-green-500 text-white rounded">
+        <h4 class="text-xl font-bold mb-2">Investment <br /> planning & strategy</h4>
+        <ul class="list-disc ml-5">
+          <li>Financial services</li>
+          <li>Investment plan</li>
+          <li>Blend of energy</li>
+          <li>Business strategy</li>
+        </ul>
+        <a href="#!" class="inline-block mt-3 underline">Read more...</a>
+      </div>
+    </div>
+  </div>
+
+      <div class="item bg-white border-2 border-gray-300 m-2 sm:m-3 p-4 rounded-lg shadow-sm">
+    <div class="pt-3">
+      <i class="fa-solid fa-anchor  text-green-500 text-4xl sm:text-5xl lg:text-5xl"></i>
+      <h3 class="text-xl md:text-lg lg:xl  font-bold mt-2">
+        Investment<br />planning & strategy 2
+      </h3>
+    </div>
+    <p class="pt-4 text-sm sm:text-base md:text-lg text-gray-700">
+      International business consulting perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+    </p>
+    <div class="border-t-2 border-gray-300 pt-3 mt-4">
+      <a href="#!" class="text-green-600 hover:underline text-base md:text-lg font-semibold">
+        Read more...
+      </a>
+    </div>
+    <div class="show-details hidden">
+      <img src="./img/feature-04.jpg" class="w-full h-auto object-cover mt-2 lg:mt-4 rounded" alt="...">
+      <div class="feature-box-detail p-4 bg-green-500 text-white rounded">
+        <h4 class="text-xl font-bold mb-2">Investment <br /> planning & strategy</h4>
+        <ul class="list-disc ml-5">
+          <li>Financial services</li>
+          <li>Investment plan</li>
+          <li>Blend of energy</li>
+          <li>Business strategy</li>
+        </ul>
+        <a href="#!" class="inline-block mt-3 underline">Read more...</a>
+      </div>
+    </div>
+  </div>
+
+        <div class="item bg-white border-2 border-gray-300 m-2 sm:m-3 p-4 rounded-lg shadow-sm">
+    <div class="pt-3">
+      <i class="bi bi-globe text-green-500 text-4xl sm:text-5xl lg:text-6xl"></i>
+      <h3 class="text-xl md:text-lg lg:xl  font-bold mt-2">
+        Investment<br />planning & strategy 3
+      </h3>
+    </div>
+    <p class="pt-4 text-sm sm:text-base md:text-lg text-gray-700">
+      International business consulting perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+    </p>
+    <div class="border-t-2 border-gray-300 pt-3 mt-4">
+      <a href="#!" class="text-green-600 hover:underline text-base md:text-lg font-semibold">
+        Read more...
+      </a>
+    </div>
+    <div class="show-details hidden">
+      <img src="./img/feature-04.jpg" class="w-full h-auto object-cover mt-2 lg:mt-4 rounded" alt="...">
+      <div class="feature-box-detail p-4 bg-green-500 text-white rounded">
+        <h4 class="text-xl font-bold mb-2">Investment <br /> planning & strategy</h4>
+        <ul class="list-disc ml-5">
+          <li>Financial services</li>
+          <li>Investment plan</li>
+          <li>Blend of energy</li>
+          <li>Business strategy</li>
+        </ul>
+        <a href="#!" class="inline-block mt-3 underline">Read more...</a>
+      </div>
+    </div>
+  </div>
+
+     <div class="item bg-white border-2 border-gray-300 m-2 sm:m-3 p-4 rounded-lg shadow-sm">
+    <div class="pt-3">
+      <i class="bi bi-globe text-green-500 text-4xl sm:text-5xl lg:text-6xl"></i>
+      <h3 class="text-xl md:text-lg lg:xl  font-bold mt-2">
+        Investment<br />planning & strategy 4
+      </h3>
+    </div>
+    <p class="pt-4 text-sm sm:text-base md:text-lg text-gray-700">
+      International business consulting perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+    </p>
+    <div class="border-t-2 border-gray-300 pt-3 mt-4">
+      <a href="#!" class="text-green-600 hover:underline text-base md:text-lg font-semibold">
+        Read more...
+      </a>
+    </div>
+    <div class="show-details hidden">
+      <img src="./img/feature-04.jpg" class="w-full h-auto object-cover mt-2 lg:mt-4 rounded" alt="...">
+      <div class="feature-box-detail p-4 bg-green-500 text-white rounded">
+        <h4 class="text-xl font-bold mb-2">Investment <br /> planning & strategy</h4>
+        <ul class="list-disc ml-5">
+          <li>Financial services</li>
+          <li>Investment plan</li>
+          <li>Blend of energy</li>
+          <li>Business strategy</li>
+        </ul>
+        <a href="#!" class="inline-block mt-3 underline">Read more...</a>
+      </div>
+    </div>
+  </div>
+
+     <div class="item bg-white border-2 border-gray-300 m-2 sm:m-3 p-4 rounded-lg shadow-sm">
+    <div class="pt-3">
+      <i class="bi bi-globe text-green-500 text-4xl sm:text-5xl lg:text-6xl"></i>
+      <h3 class="text-xl md:text-lg lg:xl  font-bold mt-2">
+        Investment<br />planning & strategy 5
+      </h3>
+    </div>
+    <p class="pt-4 text-sm sm:text-base md:text-lg text-gray-700">
+      International business consulting perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+    </p>
+    <div class="border-t-2 border-gray-300 pt-3 mt-4">
+      <a href="#!" class="text-green-600 hover:underline text-base md:text-lg font-semibold">
+        Read more...
+      </a>
+    </div>
+    <div class="show-details hidden">
+      <img src="./img/feature-04.jpg" class="w-full h-auto object-cover mt-2 lg:mt-4 rounded" alt="...">
+      <div class="feature-box-detail p-4 bg-green-500 text-white rounded">
+        <h4 class="text-xl font-bold mb-2">Investment <br /> planning & strategy</h4>
+        <ul class="list-disc ml-5">
+          <li>Financial services</li>
+          <li>Investment plan</li>
+          <li>Blend of energy</li>
+          <li>Business strategy</li>
+        </ul>
+        <a href="#!" class="inline-block mt-3 underline">Read more...</a>
+      </div>
+    </div>
+  </div>
+</div> 
+</section>
+
+ <!-- ABOUT
+        ================================================== -->
+<!-- <section class="bg-light  mt-[50px] font-poppins">
+        <div class=" container mx-auto flex flex-col lg:flex-row   m-5 p-5 gap-10 py-[120px] ">
+
+            <div class="">
+                <img src="./img/contant-left01.jpg" alt="..." class="border-radius-5 shadow-lg  lg:w-[380px] w-full h-auto">
+            </div>          
+                
+            <div class=" ">
+                        <div>
+                        <h3 class="mb-3 text-xl md:text-2xl lg:text-4xl font-semibold">Our passion us to work hard and deliver outstanding results.</h3>
+                        <p class="text-gray-500 text-base lg:text-xl my-4">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.</p>
+                        </div>
+                        <div class="text-gray-500 text-base lg:text-xl my-4 w-85 w-md-65">
+                            <ul class="list-style-5 list-disc mb-4 p-3 ml-3">
+                                <li class="py-3">Successful marketing</li>
+                                <hr class="w-[600px]">
+                                <li class="py-3">Business strategy</li>
+                                <hr class="w-[600px]">
+                                <li class="py-3">Take better decisions</li>
+                                <hr class="w-[600px]">
+                                <li class="py-3">Working materials formate</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-row gap-4">
+                            <div class="lg:mt-4">
+                                <div class= "bg-white shadow-sm text-center p-4 ">
+                                    <h4 class="countup text-3xl font-semibold" id="project">880</h4>
+                                    <div class="w-20 h-[3px] bg-green-500 mx-auto my-2"></div>
+                                    <p class="text-uppercase   text-green-600 text-lg font-semibold letter-spacing-1">Projects</p>
+                                </div>
+                            </div>
+                            <div class="lg:mt-4 ">
+                                <div class="bg-white shadow-sm text-center p-4 ">
+                                    <h4 class="countup text-3xl font-semibold" id="clients">678</h4>
+                                    <div class="w-20 h-[3px] bg-green-500 mx-auto my-2"></div>
+                                    <p class="text-uppercase   text-green-600 text-lg font-semibold font-3xl letter-spacing-1">Clients</p>
+                                </div>
+                            </div>
+                            <div class="lg:mt-4">
+                                <div class="bg-white shadow-sm text-center p-4 ">
+                                    <h4 class="countup text-3xl font-semibold" id="awards">112</h4>
+                                    <div class="w-20 h-[3px] bg-green-500 mx-auto my-2"></div>
+                                    <p class="text-uppercase  text-green-600 text-lg font-semibold letter-spacing-1">Awards</p>
+                                </div>
+                            </div>                              
+                </div>
+            </div>
+        </div> -->
+        
+
+<section class="bg-gray-50 mt-12 font-poppins">
+  <div class="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-12 px-6 py-20">
+
+    <!-- Left: Image -->
+    <div class="w-full lg:w-[40%]">
+      <img src="./img/contant-left01.jpg" alt="Businessman" class="rounded-md shadow-lg md:w-[90%] lg:w-[90%] h-auto">
+    </div>
+
+    <!-- Right: Content -->
+    <div class="w-full lg:w-[50%]">
+      <!-- Heading -->
+      <h3 class=" text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-4">
+        Our passion is to work hard and deliver outstanding results.
+      </h3>
+      <!-- Description -->
+      <p class="text-gray-600 text-base lg:text-lg mb-6">
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.
+      </p>
+
+      <!-- Checklist -->
+      <ul class="space-y-4 mb-8 list-disc">
+        <li class="flex items-center justify-between border-b border-gray-300 py-1">
+          <span class="text-gray-700">Successful marketing</span>
+        </li>
+        <li class="flex items-center justify-between border-b border-gray-300 py-1">
+          <span class="text-gray-700">Business strategy</span>
+        </li>
+        <li class="flex items-center justify-between border-b border-gray-300 py-1">
+          <span class="text-gray-700">Take better decisions</span>
+        </li>
+        <li class="flex items-center justify-between py-3">
+          <span class="text-gray-700">Working materials formate</span>
+        </li>
+      </ul>
+
+      <!-- Counters -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Projects -->
+        <div class="bg-white shadow text-center p-6 rounded-md">
+          <h4 class="text-2xl font-bold text-gray-800" id="project">880+</h4>
+          <div class="w-12 h-[3px] bg-green-500 mx-auto my-2"></div>
+          <p class="text-green-600 font-semibold uppercase tracking-wide">Projects</p>
+        </div>
+        <!-- Clients -->
+        <div class="bg-white shadow text-center p-6 rounded-md">
+          <h4 class="text-2xl font-bold text-gray-800" id="clients">678+</h4>
+          <div class="w-12 h-[3px] bg-green-500 mx-auto my-2"></div>
+          <p class="text-green-600 font-semibold uppercase tracking-wide">Clients</p>
+        </div>
+        <!-- Awards -->
+        <div class="bg-white shadow text-center p-6 rounded-md">
+          <h4 class="text-2xl font-bold text-gray-800" id="awards">112+</h4>
+          <div class="w-12 h-[3px] bg-green-500 mx-auto my-2"></div>
+          <p class="text-green-600 font-semibold uppercase tracking-wide">Awards</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+                   
+
+ <!-- TAB
+        ================================================== -->
+ <section class="mt-32 font-poppins">
+        
+            <div class="container">
+            <div class="section-heading">
+                <h3 class="text-center font-semibold text-4xl">Our Working Process</h3>
+                <div class="w-32 h-[3px] bg-green-500 mx-auto mt-3"></div>
+            </div>
+        </div>
+
+        <div class="hidden lg:block">
+        <div class="container-fluid">
+            <div class="text-center flex justify-center items-center my-10 border-b-2 py-4 ">
+                <ul class="flex justify-center items-center gap-10 text-2xl font-semibold list-unstyled">
+                    <li id="Discover" >Discover <div class="w-32 h-[2px]  bg-green-500 mx-auto mt-3 "></div></li>            
+                    <li id="Planning" class="cursor-pointer">Planning <div class="w-32 h-[2px]  mx-auto mt-3 "></div></li>
+                    <li id="Marketing" class="cursor-pointer">Marketing <div class="w-32 h-[2px]  mx-auto mt-3 "></div></li>
+                    <li id="Growth" class="cursor-pointer">Growth <div class="w-32 h-[2px]  mx-auto mt-3 "></div></li>
+                </ul>
+            </div>
+                <div id="discoverContainer" class="container p-0 p-lg-auto my-4">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                            <div class="box-shadow-large p-3">
+                                <img src="img/content-04.jpg" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ps-0 ps-lg-3 ps-xl-4">
+                                <h4 class="mb-3 text-4xl font-semibold">Integration of business</h4>
+                                <p class="text-gray-500 text-xl my-4" >Duis Integration aute irure design in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non design proident.</p>
+
+                                <ul class="list-style-16  text-gray-500 text-xl list-disc mb-4 p-3 ml-3  ">
+                                    <li class="py-2">Exclusive design</li>
+                                    <li class="py-2">Life time supports</li>
+                                    <li class="py-2">Solve your problem with us</li>
+                                    <li class="py-2">We Provide Awesome Services</li>
+                                    <li class="py-2">Your business deserves best software</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="planningContainer" class="container p-0 p-lg-auto my-4 d-none">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="col-lg-6 order-lg-1 order-2">
+                            <div class="pe-0 pe-lg-3 pe-xl-4">
+                                <h4 class="mb-3 text-4xl font-semibold">Vision to planning</h4>
+                                <p class="text-gray-500 text-xl my-4">Build integration aute irure design in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat design proident.</p>
+
+                                <ul class="list-style-16 text-gray-500 text-xl list-disc mb-4 p-3 ml-3">
+                                    <li class="py-2" >Life time supports</li>
+                                    <li class="py-2">Exclusive design</li>
+                                    <li class="py-2">Solve your problem with us</li>
+                                    <li class="py-2">We Provide Awesome Services</li>
+                                    <li class="py-2">Your business deserves best software</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-1 text-center text-lg-start mb-4 mb-lg-0">
+                            <div class="box-shadow-large p-3">
+                                <img src="img/content-01.jpg" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+
+                <div id="marketingContainer" class="container p-0 p-lg-auto my-4 d-none">
+                    <div class="row">
+                        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                            <div class="box-shadow-large p-3">
+                                <img src="img/content-02.jpg" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ps-0 ps-lg-3 ps-xl-4">
+                                <h4 class="mb-3 text-4xl font-semibold">Plan to marketing</h4>
+                                <p class="text-gray-500 text-xl my-4">Ready site integration aute irure design in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat design proident.</p>
+
+                                <ul class="list-style-16  text-gray-500 text-xl list-disc mb-4 p-3 ml-3">
+                                    <li class="py-2">Creating Stunning design</li>
+                                    <li class="py-2">Solve your problem with us</li>
+                                    <li class="py-2">Grow your business</li>
+                                    <li class="py-2">We Provide Awesome Services</li>
+                                    <li class="py-2">Exclusive design</li>
+
+                                </ul>
+                            </div>
+                        
+                    </div>
+                </div>
+
+                </div>
+
+            <div id="growthContainer" class="container p-0 p-lg-auto my-4 d-none">
+                    <div class="row">
+                        <div class="col-lg-6 order-lg-1 order-2">
+                            <div class="pe-0 pe-lg-3 pe-xl-4">
+                                <h4 class="mb-3 text-4xl font-semibold">Start to growth</h4>
+                                <p class="text-gray-500 text-xl my-4">Build integration aute irure design in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat design proident.</p>
+
+                                <ul class="list-style-16  text-gray-500 text-xl list-disc mb-4 p-3 ml-3">
+                                    <li class="py-2">Research & Devloping</li>
+                                    <li class="py-2">Fully customizable</li>
+                                    <li class="py-2">Solve your problem faster</li>
+                                    <li class="py-2">There are many variations</li>
+                                    <li class="py-2">Your business deserves best software</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-1 text-center text-lg-start mb-4 mb-lg-0">
+                            <div class="box-shadow-large p-3">
+                                <img src="img/content-03.jpg" alt="..." class="w-100 w-lg-auto">
+                            </div>
+                        </div>
+                    </div>
+            </div>      
+
+        </div>
+        </div>
+        
+        <div class="lg:hidden w-full max-w-xl md:max-w-2xl mx-auto border border-gray-300 divide-y mt-5">
+  <div x-data="{ open: false }" class="p-4">
+    <div class="flex justify-between items-center cursor-pointer" @click="open = !open">
+      <strong>Discover</strong>
+      <span x-text="open ? '▲' : '▼'"></span>
+    </div>
+    <div x-show="open" x-collapse class="mt-2 text-gray-600">
+      <!-- Discover content here -->
+      
+        <div id="discoverContainer" class="container p-0 p-lg-auto my-4">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                            <div class="box-shadow-large p-3">
+                                <img src="img/content-04.jpg" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ps-0 ps-lg-3 ps-xl-4">
+                                <h4 class="mb-3 text-4xl font-semibold">Integration of business</h4>
+                                <p class="text-gray-500 text-xl my-4" >Duis Integration aute irure design in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non design proident.</p>
+
+                                <ul class="list-style-16  text-gray-500 text-xl list-disc mb-4 p-3 ml-3  ">
+                                    <li class="py-2">Exclusive design</li>
+                                    <li class="py-2">Life time supports</li>
+                                    <li class="py-2">Solve your problem with us</li>
+                                    <li class="py-2">We Provide Awesome Services</li>
+                                    <li class="py-2">Your business deserves best software</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+      
+    </div>
+  </div>
+
+  <div x-data="{ open: false }" class="p-4">
+    <div class="flex justify-between items-center cursor-pointer" @click="open = !open">
+      <strong>Planning</strong>
+      <span x-text="open ? '▲' : '▼'"></span>
+    </div>
+    <div x-show="open" x-collapse class="mt-2 text-gray-600">
+      <!-- Discover content here -->
+      
+         <div id="planningContainer" class="container p-0 p-lg-auto my-4 ">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="col-lg-6 order-lg-1 order-2">
+                            <div class="pe-0 pe-lg-3 pe-xl-4">
+                                <h4 class="mb-3 text-4xl font-semibold">Vision to planning</h4>
+                                <p class="text-gray-500 text-xl my-4">Build integration aute irure design in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat design proident.</p>
+
+                                <ul class="list-style-16 text-gray-500 text-xl list-disc mb-4 p-3 ml-3">
+                                    <li class="py-2" >Life time supports</li>
+                                    <li class="py-2">Exclusive design</li>
+                                    <li class="py-2">Solve your problem with us</li>
+                                    <li class="py-2">We Provide Awesome Services</li>
+                                    <li class="py-2">Your business deserves best software</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-1 text-center text-lg-start mb-4 mb-lg-0">
+                            <div class="box-shadow-large p-3">
+                                <img src="img/content-01.jpg" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+    </div>
+  </div>
+
+  <div x-data="{ open: false }" class="p-4">
+    <div class="flex justify-between items-center cursor-pointer" @click="open = !open">
+      <strong>Marketing</strong>
+      <span x-text="open ? '▲' : '▼'"></span>
+    </div>
+    <div x-show="open" x-collapse class="mt-2 text-gray-600">
+      <!-- Discover content here -->
+      <p>  
+         <div id="marketingContainer" class="container p-0 p-lg-auto my-4 ">
+                    <div class="row">
+                        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                            <div class="box-shadow-large p-3">
+                                <img src="img/content-02.jpg" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ps-0 ps-lg-3 ps-xl-4">
+                                <h4 class="mb-3 text-4xl font-semibold">Plan to marketing</h4>
+                                <p class="text-gray-500 text-xl my-4">Ready site integration aute irure design in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat design proident.</p>
+
+                                <ul class="list-style-16  text-gray-500 text-xl list-disc mb-4 p-3 ml-3">
+                                    <li class="py-2">Creating Stunning design</li>
+                                    <li class="py-2">Solve your problem with us</li>
+                                    <li class="py-2">Grow your business</li>
+                                    <li class="py-2">We Provide Awesome Services</li>
+                                    <li class="py-2">Exclusive design</li>
+
+                                </ul>
+                            </div>
+                        
+                    </div>
+                </div>
+
+                </div>
+            
+    </div>
+  </div>
+
+  <div x-data="{ open: false }" class="p-4">
+    <div class="flex justify-between items-center cursor-pointer" @click="open = !open">
+      <strong>Growth</strong>
+      <span x-text="open ? '▲' : '▼'"></span>
+    </div>
+    <div x-show="open" x-collapse class="mt-2 text-gray-600">
+      <!-- Discover content here -->
+
+        <div id="growthContainer" class="container p-0 p-lg-auto my-4 ">
+                    <div class="row">
+                        <div class="col-lg-6 order-lg-1 order-2">
+                            <div class="pe-0 pe-lg-3 pe-xl-4">
+                                <h4 class="mb-3 text-4xl font-semibold">Start to growth</h4>
+                                <p class="text-gray-500 text-xl my-4">Build integration aute irure design in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat design proident.</p>
+
+                                <ul class="list-style-16  text-gray-500 text-xl list-disc mb-4 p-3 ml-3">
+                                    <li class="py-2">Research & Devloping</li>
+                                    <li class="py-2">Fully customizable</li>
+                                    <li class="py-2">Solve your problem faster</li>
+                                    <li class="py-2">There are many variations</li>
+                                    <li class="py-2">Your business deserves best software</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-1 text-center text-lg-start mb-4 mb-lg-0">
+                            <div class="box-shadow-large p-3">
+                                <img src="img/content-03.jpg" alt="..." class="w-100 w-lg-auto">
+                            </div>
+                        </div>
+                    </div>
+            </div>      
+
+            
+    </div>
+  </div>
+
+</div>
+
+
+       
+
+
+</section>
+
+
+
+ <!-- VIDEO
+        ================================================== -->
+<style>
+    .parallax {
+      background-image: url('./img/bg1.jpg'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;     
+      position: relative;
+      padding: 160px 0;
+
+    }
+
+    .overly {      
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+      z-index: 1;
+    }
+
+    .parallax .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .story-video .video_btn {
+      background-color: #7AC943;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .story-video .video_btn:hover {
+      background-color: #5ea936;
+      color: #fff;
+    }
+
+    .text-primary {
+      color: #7AC943 !important;
+    }
+
+    .border-color-light-white {
+      border-color: rgba(255,255,255,0.4) !important;
+    }
+
+    .h1 {
+      font-size: 2.2rem;
+    }
+  </style>
+<section class="py-[120px]" >
+    <div class="parallax">
+    <div class="overly"></div>
+    <div class="container ">
+        <div class="row align-items-center">
+            <div class="col-lg-7 order-2 order-lg-1 mt-1-9 mt-lg-0 py-10">
+                <h4 class="text-white h1 lh-base text-center text-lg-end letter-spacing-1 m-0">
+                    <span class="mb-0 lg:text-5xl">
+                        Whether <strong class="font-weight-700">you are looking </strong> for answers, would like to
+                        <strong class="font-weight-700">solve</strong> a any business problem
+                    </span>
+                </h4>
+            </div>
+            <div class="col-lg-5 order-1 order-lg-2">
+                <div class="text-center mx-auto">
+                    <div class="story-video ">
+                        <div class="inline-block align-middle z-index-1 text-start mb-1-9 py-3">
+                            <a class="video video_btn" href="https://www.youtube.com/watch?v=f5BBJ4ySgpo"><i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="align-middle">
+                            <a href="#!" class="text-primary border-bottom border-color-light-white">
+                                Video Presentation </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECT
+        ================================================== -->
+    <section class="project-single-two bg-light my-32 py-10 font-poppins">
+
+            <div class="container mb-5">
+                <div class="section-heading">
+                    <h2 class="text-center font-semibold md:text-4xl">Our Project</h2>
+                    <div class="w-32 h-[3px] bg-green-500 mx-auto mt-3"></div>
+                </div>
+            </div>
+
+            <div class="mb-5 container ">
+
+                <div class="owl-carousel project-theme owl-theme ">
+
+                   
+                    <div class="item  max-w-full md:max-w-[25rem] shadow-lg  ">
+                       
+                            <div class="project-image ">
+                                <img src="img/pro-10.jpg" class="w-full" >
+                                <div class="overlay d-none">
+                                    <div class="overlay-inner">
+                                        <div class="description">
+                                            <div class="text d-none">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
+                                            <a href="project-detail.html" class="read-more d-none"><span class="fa fa-angle-right"></span> Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-desc p-1-9 p-md-2-0 p-lg-2-3 p-8">
+                                <div class="category mb-2 mb-md-3 mb-lg-0 py-1 text-lg text-green-600 hover:text-black">SAVING INVESTMENT</div>
+                                <h3 class="h5 font-weight-600 m-0 py-3 text-2xl font-semibold"><a href="project-detail.html">Hands working with finances saving economy</a></h3>
+                            </div>
+                        </div>
+                     <div class="item project-grid-style3 max-w-full md:max-w-[25rem] shadow-lg  ">
+                        <div class="inner-box"> 
+                            <div class="project-image">
+                                <img src="img/pro-11.jpg" class="w-full" alt="...">
+                                <div class="overlay d-none">
+                                    <div class="overlay-inner">
+                                        <div class="description">
+                                            <div class="text d-none">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
+                                            <a href="project-detail.html" class="read-more d-none"><span class="fa fa-angle-right"></span> Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-desc p-1-9 p-md-2-0 p-lg-2-3 p-8">
+                                <div class="category mb-2 mb-md-3 mb-lg-0 py-1 text-lg text-green-600 hover:text-black">SAVING INVESTMENT</div>
+                                <h3 class="h5 font-weight-600 m-0 py-3 text-2xl font-semibold"><a href="project-detail.html">Hands working with finances saving economy</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item project-grid-style3 max-w-full md:max-w-[25rem] shadow-lg    ">
+                        <div class="inner-box"> 
+                            <div class="project-image">
+                                <img src="img/pro-9.jpg" class="w-full" alt="...">
+                                <div class="overlay d-none">
+                                    <div class="overlay-inner">
+                                        <div class="description">
+                                            <div class="text d-none">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
+                                            <a href="project-detail.html" class="read-more d-none"><span class="fa fa-angle-right"></span> Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-desc p-1-9 p-md-2-0 p-lg-2-3 p-8">
+                                <div class="category mb-2 mb-md-3 mb-lg-0 py-1 text-lg text-green-600 hover:text-black">SAVING INVESTMENT</div>
+                                <h3 class="h5 font-weight-600 m-0 py-3 text-2xl font-semibold"><a href="project-detail.html">Hands working with finances saving economy</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item project-grid-style3 max-w-full md:max-w-[26rem] shadow-lg  ">
+                        <div class="inner-box"> 
+                            <div class="project-image">
+                                <img src="img/pro-12.jpg" class="w-full" alt="...">
+                                <div class="overlay d-none">
+                                    <div class="overlay-inner">
+                                        <div class="description">
+                                            <div class="text d-none">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
+                                            <a href="project-detail.html" class="read-more d-none"><span class="fa fa-angle-right"></span> Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-desc p-1-9 p-md-2-0 p-lg-2-3 p-8">
+                                <div class="category mb-2 mb-md-3 mb-lg-0 py-1 text-lg text-green-600 hover:text-black">SAVING INVESTMENT</div>
+                                <h3 class="h5 font-weight-600 m-0 py-3 text-2xl font-semibold"><a href="project-detail.html">Hands working with finances saving economy</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item project-grid-style3 max-w-full md:max-w-[25rem]  shadow-lg  ">
+                        <div class="inner-box"> 
+                            <div class="project-image">
+                                <img src="img/pro-11.jpg" class="w-full" alt="...">
+                                <div class="overlay d-none">
+                                    <div class="overlay-inner">
+                                        <div class="description">
+                                            <div class="text d-none">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
+                                            <a href="project-detail.html" class="read-more d-none"><span class="fa fa-angle-right"></span> Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-desc p-1-9 p-md-2-0 p-lg-2-3 p-8">
+                                <div class="category mb-2 mb-md-3 mb-lg-0 py-1 text-lg text-green-600 hover:text-black">SAVING INVESTMENT</div>
+                                <h3 class="h5 font-weight-600 m-0 py-3 text-2xl font-semibold"><a href="project-detail.html">Hands working with finances saving economy</a></h3>
+                            </div>
+                        </div>
+                    </div>
+              <!-- <div class="project-grid-style3 d-none">
+                        <div class="inner-box">
+                            <div class="project-image">
+                                <img src="img/projects/pro-10.jpg" alt="...">
+                                <div class="overlay">
+                                    <div class="overlay-inner">
+                                        <div class="description">
+                                            <div class="text">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
+                                            <a href="project-detail.html" class="read-more"><span class="fa fa-angle-right"></span> Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-desc p-1-9 p-md-2-0 p-lg-2-3">
+                                <div class="category mb-2 mb-md-3 mb-lg-0">Online consulting</div>
+                                <h3 class="h5 font-weight-600 m-0"><a href="project-detail.html">Communication technology with consulting</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-grid-style3 d-none">
+                        <div class="inner-box">
+                            <div class="project-image">
+                                <img src="img/projects/pro-9.jpg" alt="...">
+                                <div class="overlay">
+                                    <div class="overlay-inner">
+                                        <div class="description">
+                                            <div class="text">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
+                                            <a href="project-detail.html" class="read-more"><span class="fa fa-angle-right"></span> Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-desc p-1-9 p-md-2-0 p-lg-2-3">
+                                <div class="category mb-2 mb-md-3 mb-lg-0">Investment bank</div>
+                                <h3 class="h5 font-weight-600 m-0"><a href="project-detail.html">Instead of cash investment banking money</a></h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-grid-style3 d-none">
+                        <div class="inner-box">
+                            <div class="project-image">
+                                <img src="img/projects/pro-12.jpg" alt="...">
+                                <div class="overlay">
+                                    <div class="overlay-inner">
+                                        <div class="description">
+                                            <div class="text">Lorem ipsum dolor sit amet adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Utna enim ad minim veniam quis nostrud exercitation ulamco laboris nisi aliquip exea comm ayodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</div>
+                                            <a href="project-detail.html" class="read-more"><span class="fa fa-angle-right"></span> Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-desc p-1-9 p-md-2-0 p-lg-2-3">
+                                <div class="category mb-2 mb-md-3 mb-lg-0">Finance analysis</div>
+                                <h3 class="h5 font-weight-600 m-0"><a href="project-detail.html">Making presentation for finance research analysis</a></h3>
+                            </div>
+                        </div>
+                    </div> -->
+                </div> 
+            </div>
+        </section>
+
+
+<!-- PRICING
+        ================================================== -->   
+<section class="font-poppins">
+            <div class="container mb-5">
+                <div class="section-heading">
+                    <h2 class="text-center font-semibold md:text-4xl">The Best Price For You</h2>
+                    <div class="w-32 h-[3px] bg-green-500 mx-auto mt-3"></div>
+                </div>
+            </div>
+
+            
+                <!-- pricing content -->
+                <div class=" pricing-content my-5 ">
+                    <div class=" container flex flex-wrap  justify-center items-center gap-3 xl:gap-4">
+
+                        <!-- single item -->
+                        <div class="col-lg-4 mt-1-9 w-[28rem] md:w-[32rem] lg:w-[20rem] xl:w-[25rem] bg-white shadow-md rounded-lg  ">
+                            <div class="single-plan text-center">
+                                <div class="head-plan bg-gray-500 py-3 text-white">
+                                    <h4 class="text-xl">Classic</h4>
+                                </div>
+                                <div class="body-plan ">
+                                    <div class="price-plan py-5  bg-gray-100 ">
+                                        <h1 class="text-3xl text-gray-500 font-bold"><sup>$</sup>49</h1>
+                                        <span>Per Month</span>                 
+
+                                          
+                                    </div>
+                                    <div class="feat-plan">
+                                        <ul class=" py-5 border-t-2">
+                                            <li class="py-4 text-xl text-gray-500 border-b-2">Business Analysing</li>
+                                            <li class="py-4 text-xl text-gray-500 border-b-2">Finance Analysing</li>
+                                            <li class="py-4 text-xl text-gray-500 border-b-2">Custom Management</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer-plan pb-5">
+                                    <a href="#!" class="butn medium bg-black py-3 px-5 rounded-lg text-white">
+                                        <span>Book Now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single item -->
+
+                        <!-- single item -->
+                        <div class="col-lg-4  w-[28rem] md:w-[32rem] lg:w-[20rem] xl:w-[25rem] bg-white shadow-md rounded-lg  ">
+                            <div class="single-plan text-center">
+                                <div class="head-plan bg-green-600 py-3 text-white">
+                                    <h2 class="text-xl">Popular</h2>
+                                </div>
+                                <div class="body-plan ">
+                                    <div class="price-plan py-5  bg-gray-100 ">
+                                        <h1 class="text-3xl text-gray-500 font-bold"><sup>$</sup>39</h1>
+                                        <span>Per Month</span>                 
+
+                                          
+                                    </div>
+                                    <div class="feat-plan">
+                                        <ul class=" py-5 border-t-2">
+                                            <li class="py-4 text-xl text-gray-500 border-b-2">Business Analysing</li>
+                                            <li class="py-4 text-xl text-gray-500 border-b-2">Finance Analysing</li>
+                                            <li class="py-4 text-xl text-gray-500 border-b-2">Growth Tracking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer-plan pb-5">
+                                    <a href="#!" class="butn medium bg-black py-3 px-5 rounded-lg text-white">
+                                        <span>Book Now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single item -->
+
+                        <!-- single item -->
+                        <div class="col-lg-4 mt-1-9  w-[28rem] md:w-[32rem] lg:w-[20rem] xl:w-[25rem] bg-white shadow-md rounded-lg ">
+                            <div class="single-plan text-center">
+                                <div class="head-plan bg-gray-500 py-3 text-white">
+                                    <h2 class="text-xl">Classic</h2>
+                                </div>
+                                <div class="body-plan ">
+                                    <div class="price-plan py-5  bg-gray-100 ">
+                                        <h1 class="text-3xl text-gray-500 font-bold"><sup>$</sup>49</h1>
+                                        <span>Per Month</span>                 
+
+                                          
+                                    </div>
+                                    <div class="feat-plan">
+                                        <ul class=" py-5 border-t-2">
+                                            <li class="py-4 text-xl text-gray-500 border-b-2">Business Analysing</li>
+                                            <li class="py-4 text-xl text-gray-500 border-b-2">Finance Analysing</li>
+                                            <li class="py-4 text-xl text-gray-500 border-b-2">Training & Workshop</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer-plan pb-5">
+                                    <a href="#!" class="butn medium bg-black py-3 px-5 rounded-lg text-white">
+                                        <span>Book Now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single item -->
+
+                    </div>
+                </div>
+                <!-- end pricing content -->
+            </div>
+        </section>
+
+
+ <!-- TESTIMONIAL
+        ================================================== -->
+        <section class="bg-light mt-32  font-poppins">
+            <div class="container py-32">
+                <div class="section-heading py-10">
+                    <h2 class="text-center font-semibold md:text-4xl">What Our Client Say</h2>
+                    <div class="w-32 h-[3px] bg-green-500 mx-auto mt-3"></div>
+                </div>
+
+                <div class="owl-carousel testimonal-theme owl-theme  py-5 ">    
+                                      
+                    <div class="item flex flex-col lg:flex-row justify-center items-center p-4 border-t-8 border-y-2 border-x-2 border-gray-200 rounded-lg">
+                        <div class="p-3">
+                            <img alt="..." src="img/t-4.jpg " class="rounded-full ">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="data">
+                                <p class="text-xl py-3 text-gray-500">Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
+                                <h5 class="text-2xl font-semibold">Stepha Kruse</h5><span class="text-green-600">Marketing Lead</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex flex-col lg:flex-row justify-center items-center p-4 border-t-8 border-y-2 border-x-2 border-gray-200 rounded-lg">
+                        <div class="p-3">
+                            <img alt="..." src="img/t-5.jpg " class="rounded-full  ">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="data">
+                                <p class="text-xl py-3 text-gray-500">Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
+                                <h5 class="text-2xl font-semibold">Stepha Kruse</h5><span class="text-green-600">Marketing Lead</span>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex flex-col lg:flex-row justify-center items-center p-4 border-t-8 border-y-2 border-x-2 border-gray-200 rounded-lg">
+                        <div class="p-3">
+                            <img alt="..." src="img/t-6.jpg " class="rounded-full ">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="data">
+                                <p class="text-xl py-3 text-gray-500">Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
+                                <h5 class="text-2xl font-semibold">Stepha Kruse</h5><span class="text-green-600">Marketing Lead</span>
+                               
+                            </div>
+                        </div>
+                    </div>
+           
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG
+        ================================================== -->
+<section class="font-poppins">
+    <div class="container py-32">
+                <div class="section-heading py-10">
+                    <h2 class="text-center font-semibold md:text-4xl">Our Blog</h2>
+                    <div class="w-32 h-[3px] bg-green-500 mx-auto mt-3"></div>
+                </div>
+
+        <div class="row mt-n1-9">
+
+            <!-- blog -->
+            <div class="col-md-6 col-lg-4  mb-10 lg:mb-0 ">
+                <article class="card card-style2 border-0 shadow-lg">
+                    <div class="card-img hover:grayscale">
+                        <img src="img/blog-7.jpg" alt="...">
+                        
+                    </div>
+                    <div class="card-body p-4">
+                        <h3 class="mb-2 text-lg text-black font-semibold  font-weight-600"><a href="blog-post.html">Investment planning team</a></h3>
+                        <p class="text-base text-gray-500 " >Lorem Ipsum is simply dummy text of the printing and typesetting industry Ipsum is simply...</p>
+                        <div class="tag alt-fontc text-base text-gray-500 py-2">
+                            <a href="blog-list-sidebar.html">Designing | <span class="d-inline-block text-primary">02 Jan 2022</span></a>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+            <!-- end blog -->
+
+            <!-- blog -->
+            <div class="col-md-6 col-lg-4  mb-10 lg:mb-0">
+                <article class="card card-style2 border-0 shadow-lg">
+                    <div class="card-img hover:grayscale">
+                        <img src="img/blog-8.jpg" alt="...">
+                    </div>
+                    <div class="card-body p-4">
+                        <h3 class="mb-2 text-lg text-black font-semibold  font-weight-600"><a href="blog-post.html">Investment planning team</a></h3>
+                        <p class="text-base text-gray-500 " >Lorem Ipsum is simply dummy text of the printing and typesetting industry Ipsum is simply...</p>
+                        <div class="tag alt-fontc text-base text-gray-500 py-2">
+                            <a href="blog-list-sidebar.html">Designing | <span class="d-inline-block text-primary">02 Jan 2022</span></a>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+            <!-- end blog -->
+
+            <!-- blog -->
+            <div class="col-md-6 col-lg-4 mb-10 lg:mb-0 ">
+                <article class="card card-style2 border-0 shadow-lg">
+                    <div class="card-img hover:grayscale">
+                        <img src="img/blog-9.jpg" alt="...">
+                    </div>
+                    <div class="card-body p-4">
+                        <h3 class="mb-2 text-lg text-black font-semibold  font-weight-600"><a href="blog-post.html">Investment planning team</a></h3>
+                        <p class="text-base text-gray-500 " >Lorem Ipsum is simply dummy text of the printing and typesetting industry Ipsum is simply...</p>
+                        <div class="tag alt-fontc text-base text-gray-500 py-2">
+                            <a href="blog-list-sidebar.html">Designing | <span class="d-inline-block text-primary">02 Jan 2022</span></a>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+            <!-- end blog -->
+
+        </div>
+    </div>
+</section>
+
+  <!-- CLIENTS
+        ================================================== -->
+        <div class="section-clients bg-light opacity-60 relative py-20">
+            <div class="container">
+                <div class="owl-carousel client-theme owl-theme clients" id="clients">
+                    <div class="item px-3"><img alt="..." src="img/client-01.png"></div>
+                    <div class="item px-3"><img alt="..." src="img/client-02.png"></div>
+                    <div class="item px-3"><img alt="..." src="img/client-03.png"></div>
+                    <div class="item px-3"><img alt="..." src="img/client-04.png"></div>
+                    <div class="item px-3"><img alt="..." src="img/client-05.png"></div>
+                    <div class="item px-3"><img alt="..." src="img/client-06.png"></div>
+                </div>
+            </div>
+        </div>
+
+
+ <!-- FOOTER
+        ================================================== -->
+        <footer class="pt-0 bg-black text-white font-poppins">
+
+            <div class="footer-top-bar mb-6 mb-lg-8 border-b  border-white/20  text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="py-6 lg:p-8 border-b border-white/20 lg:border-b-0 lg:border-r   ">
+                                <span class="inline-block leading-none text-gray-400 align-top w-10 text-3xl">
+                                    <i class="fas fa-pencil-alt align-top"></i>
+                                </span>
+                                <div class="inline-block align-top ps-2 w-[75%]">
+                                    <h5 class="m-0 text-white uppercase text-base font-semibold">Trend Design</h5>
+                                    <p class="m-0 leading-normal text-base text-white/80">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="py-6 lg:p-8 border-b border-white/20 lg:border-b-0 lg:border-r   ">
+                                <span class="inline-block leading-none text-gray-400 align-top w-10 text-3xl">
+                                    <i class="fas fa-file-alt align-top"></i>
+                                </span>
+                                <div class="inline-block align-top ps-2 w-[75%]">
+                                    <h5 class="m-0 text-white uppercase text-base font-semibold">Documentation</h5>
+                                    <p class="m-0 leading-normal text-base text-white/80">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="py-6 lg:p-8    ">
+                                <span class="inline-block leading-none text-gray-400 align-top w-10 text-3xl">
+                                    <i class="far fa-life-ring align-top"></i>
+                                </span>
+                                <div class="inline-block align-top ps-2 w-[75%]">
+                                    <h5 class="m-0 text-white uppercase text-base font-semibold">Fast Support</h5>
+                                    <p class="m-0 leading-normal text-base text-white/80">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container p-5">
+                <div class="row mt-n1-9">
+
+                    <div class="col-lg-4 col-md-6 mt-1-9">
+
+                        <a href="#" class="inline-block">
+                            <img alt="footer-logo" src="img/logo-footer.png">
+                        </a>
+                        <p class="mt-4 mb-4 font-base">Nemo enim enim voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequr magni dolores eos qui ratione voluptatem.</p>
+                        <ul class="footer-list mb-0 ps-0">
+                            <li class="py-2">
+                                <span class="inline-block align-top"><i class="fas fa-map-marker-alt text-primary"></i></span>
+                                <span class="inline-block w-85 align-top ps-2 text-sm">74 Guild Street 542B, Great North Town MT.</span>
+                            </li>
+                            <li class="py-2">
+                                <span class="inline-block align-top"><i class="fas fa-mobile-alt text-primary"></i></span>
+                                <span class="inline-block w-85 align-top ps-2 text-sm">(+44) 123 456 789</span>
+                            </li>
+                            <li class="py-2">
+                                <span class="inline-block vertical-align-top"><i class="far fa-envelope text-primary"></i></span>
+                                <span class="inline-block w-85 align-top ps-2 text-sm">addyour@emailhere</span>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-1-9">
+                        <h3 class="footer-title-style2 text-white border-b-2 border-white/20 pb-4">Quick Links</h3>
+                        <div class="row">
+                            <div class="col-md-6 pe-md-0 py-4">
+                                <ul class="footer-list mb-2 mb-md-0 ps-0">
+                                    <li class="py-2 hover:text-green-700 hover:text-xl"><a href="#!">> News</a></li>
+                                    <li class="py-2 hover:text-green-700 hover:text-xl"><a href="#!">> History</a></li>
+                                    <li class="py-2 hover:text-green-700 hover:text-xl"><a href="#!">> Community</a></li>
+                                    <li class="py-2 hover:text-green-700 hover:text-xl"><a href="#!">> Portfolio</a></li>
+                                    <li class="py-2 hover:text-green-700 hover:text-xl"><a href="#!">> Safety</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 pe-md-0 py-4">
+                                <ul class="footer-list mb-0 ps-0 ">
+                                    <li class="py-2 hover:text-green-700 hover:text-xl"><a href="#!">> Gifts</a></li>
+                                    <li class="py-2 hover:text-green-700 hover:text-xl"><a href="#!">> Vourchers</a></li>
+                                    <li class="py-2 hover:text-green-700 hover:text-xl"><a href="#!">> Our shop</a></li>
+                                    <li class="py-2 hover:text-green-700 hover:text-xl"><a href="#!">> Secure shopping</a></li>
+                                    <li class="py-2 hover:text-green-700 hover:text-xl"><a href="#!">> Privacy policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-1-9">
+                        <div class="ps-lg-1-9">
+                            <h3 class="footer-title-style2 text-white border-b-2 border-white/20 pb-4">Newsletter</h3>
+                            <p class="mb-4 py-4">Nemo enim enim voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequr.</p>
+                            <form class="quform newsletter-form1" action="quform/newsletter-two.php" method="post" enctype="multipart/form-data" onclick="">
+
+                                <div class="quform-elements text-center">
+
+                                    <div class="row">
+
+                                        <!-- Begin Text input element -->                                        
+                                            <div class="flex w-full ">
+                                                <div class="quform-input">
+                                                    <input class="form-control h-14 sm:w-60 md:w-60 lg:w-60 rounded-r-none" id="email_address" type="email" name="email_address" placeholder="Subscribe with us">
+                                                </div>
+                                                 <!-- Begin Submit button -->
+                                                <div class="quform-submit-inner text-cente bg-green-500 rounded-r-md h-14 w-14">
+                                                    <button class="butn medium primary text-xl relative top-4 " type="submit"><span><i class="fas fa-paper-plane"></i></span></button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+          
+
+                                           
+                                          
+                                        <!-- End Submit button -->
+
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bar text-gray-600 py-4">
+                <div class="container">
+                    <div class="flex flex-wrap justify-evenly items-center">
+                        <div class=" text-center text-md-start mb-2 mb-md-0">
+                            <div class="footer-social-icons ">
+                                <ul class="ps-0 mb-0 flex gap-6 text-xl">
+                                    <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#!"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=" text-center text-md-end text-lg">
+                            <p class="mb-0">&copy; <span class="current-year"></span> Fabrex is Powered by <a href="https://www.chitrakootweb.com/" target="_blank" class="text-light-gray">Chitrakoot Web</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+<!-- cdn links -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Scripts for Carousel to Work -->
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- owl carousel cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- swiper cdn -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="main.js"></script>  
+</body>
+</html>
